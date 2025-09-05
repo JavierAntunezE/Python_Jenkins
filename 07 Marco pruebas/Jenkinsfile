@@ -2,6 +2,13 @@ pipeline {
     agent any
 
     stages {
+        tools {
+            git 'DefaultGIT'
+        }
+        stage('Clonar repositorio') {
+            steps {
+                git url: 'https://github.com/JavierAntunezE/Python_Jenkins.git', branch: 'main'
+            }
         }
         stage('Preparar entorno') {
             steps {
