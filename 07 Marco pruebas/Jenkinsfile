@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar repositorio') {
             steps {
-                git url: 'https://github.com/usuario/repositorio.git', branch: 'main'
+                git url: 'https://github.com/JavierAntunezE/Python_Jenkins.git', branch: 'main'
             }
         }
         stage('Preparar entorno') {
