@@ -1,5 +1,0 @@
-selenium
-pyodbc
-unittest-xml-reporting   # genera reportes XML compatibles con Jenkins
-pytest
-pytest-html              # reportes en HTML
