@@ -30,6 +30,7 @@ class TestLogin(unittest.TestCase):
         print("Ingresa usuario y contraseña")
         self.login_page.click_login()
 
+        print("En espera de validación")
         # Espera explícita a que cargue la página de inventario
         WebDriverWait(self.driver, 10).until(
             EC.url_contains("inventory.html"))
