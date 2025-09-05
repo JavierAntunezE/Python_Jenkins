@@ -5,11 +5,11 @@ pipeline {
         tools {
             git 'DefaultGIT'
         }
-        stage('Clonar repositorio') {
+      /*  stage('Clonar repositorio') {
             steps {
                 git url: 'https://github.com/JavierAntunezE/Python_Jenkins.git', branch: 'main'
             }
-        }
+        }*/
         stage('Preparar entorno') {
             steps {
                 sh 'python -m venv venv'
