@@ -27,11 +27,13 @@ class TestLogin(unittest.TestCase):
         self.login_page.wait_until_loaded()
         self.login_page.enter_username("standard_user")
         self.login_page.enter_password("secret_sauce")
+        print("Ingresa usuario y contraseña")
         self.login_page.click_login()
 
         # Espera explícita a que cargue la página de inventario
         WebDriverWait(self.driver, 10).until(
             EC.url_contains("inventory.html"))
+        print("Login exitoso")
 
     def tearDown(self): #Se ejecuta después de cada función
         time.sleep(0.5)
