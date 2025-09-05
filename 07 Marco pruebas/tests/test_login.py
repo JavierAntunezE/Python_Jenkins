@@ -30,6 +30,7 @@ class TestLogin(unittest.TestCase):
              "profile.password_manager_leak_detection": False
         }
         self.options.add_experimental_option("prefs", prefs)
+        self.options.add_argument('--headless')
 
     def test_login_valido(self): #Test de login exitoso
         user = self.db.get_user("standard_user")  # Devuelve ("admin", "admin123")
